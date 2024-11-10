@@ -1,0 +1,29 @@
+:root {
+  --locked-in-yellow: #e6ab17ff;
+}
+
+html {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--locked-in-yellow);
+}
+
+#content {
+  margin: 8px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
