@@ -1,0 +1,17 @@
+function shrinkSplash(){
+    splash = document.getElementById("splash");
+    windowPos = window.scrollY;
+    radiusRange = 40
+    marginRange = 5
+    scrollRange = 100
+    windowPos = (windowPos > scrollRange) ? 1 : windowPos/scrollRange;
+
+    radiusRange *= windowPos;
+    marginRange *= windowPos;
+
+    styleString = "border-radius:"+radiusRange+"px; margin:"+marginRange+"vw;"
+
+    splash.setAttribute("style",styleString)
+}
+
+document.addEventListener("scroll",shrinkSplash)
