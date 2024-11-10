@@ -14,4 +14,15 @@ function shrinkSplash(){
     splash.setAttribute("style",styleString)
 }
 
+function loadFunction(){
+    console.log(`▗▄▄▄▖▗▞▀▚▖▗▞▀▜▌▄▄▄▄      ▄  ▗▖▄▄▄▄     
+  █  ▐▛▀▀▘▝▚▄▟▌█ █ █     █  ▐▌█  █     
+  █  ▝▚▄▄▖     █   █     ▀▀▀▜▌█▀▀█     
+  █                         ▐▌█▄▄█     
+`);
+    shrinkSplash();
+}
+
 document.addEventListener("scroll",shrinkSplash)
+
+document.addEventListener("DOMContentLoaded",loadFunction)
