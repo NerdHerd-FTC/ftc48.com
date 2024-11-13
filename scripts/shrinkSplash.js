@@ -1,15 +1,15 @@
 function shrinkSplash(){
-    splash = document.getElementById("splash");
-    windowPos = window.scrollY;
-    radiusRange = 40
-    marginRange = 5
-    scrollRange = 100
+    const splash = document.getElementById("splash");
+    let windowPos = window.scrollY;
+    let radiusRange = 40
+    let marginRange = 5
+    let scrollRange = 100
     windowPos = (windowPos > scrollRange) ? 1 : windowPos/scrollRange;
 
     radiusRange *= windowPos;
     marginRange *= windowPos;
 
-    styleString = "border-radius:"+radiusRange+"px; margin:"+marginRange+"vw;"
+    let styleString = "border-radius:"+radiusRange+"px; margin:"+marginRange+"vw;"
 
     splash.setAttribute("style",styleString)
 }

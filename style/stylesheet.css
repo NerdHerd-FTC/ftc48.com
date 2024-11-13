@@ -14,9 +14,7 @@ body {
 }
 
 h1 {
-  display: inline-block;
-  vertical-align: middle;
-  color: var(--locked-in-yellow);
+  margin:0;
 }
 
 #content {
@@ -35,6 +33,7 @@ header {
   background-image: url("/images/placeholder.jpg");
   background-size:cover;
   background-position:center;
+  background-attachment: local;
   height:100%;
   width:100%;
   display:flex;
@@ -66,4 +65,50 @@ header {
   align-items: center;
   justify-content: center;
   margin-bottom:2rem;
+}
+
+h2{
+  font-size:3rem;
+  color:var(--locked-in-yellow);
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+
+li{
+  margin-top:.5rem;
+}
+
+#contactList{
+  list-style: none;
+}
+
+a{
+  color:var(--locked-in-yellow);
+}
+
+#contactList a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+#contactList a span{
+  margin-left: 8px;
+}
+
+footer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--locked-in-yellow);
+  color:#000000;
+  margin-top:2rem;
+}
+footer a{
+  color:#000000;
+}
+
+.icon{
+  height:2rem;
 }
