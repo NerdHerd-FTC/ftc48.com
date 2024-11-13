@@ -5,7 +5,7 @@
 html {
   background-color: #000000;
   color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, system-ui, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
 }
 
 body {
@@ -28,6 +28,7 @@ header {
   display: flex;
   align-items: center;
   margin-right:8px;
+  justify-content: center;
 }
 
 #splash {
@@ -41,9 +42,14 @@ header {
   justify-content: center;
 }
 
-@media (max-width:500px) {
-  #splashContent{
+#titleImage{
+  height:9rem;
+}
+
+@media (max-width:700px) {
+  #titleImage{
     width:85vw;
+    height:initial;
   }
 }
 
