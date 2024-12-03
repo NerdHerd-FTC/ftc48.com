@@ -45,10 +45,17 @@ header {
   height:9rem;
 }
 
-@media (max-width:700px) {
+@media (orientation: portrait) {
   #titleImage{
     width:85vw;
     height:initial;
+  }
+  #splash {
+    background-image: url("/images/goldKey.jpg");
+    align-items:end;
+  }
+  #splashContent {
+    margin-bottom:2rem;
   }
 }
 
@@ -113,4 +120,14 @@ footer a{
 
 .icon{
   height:2rem;
+}
+
+#heart{
+  height:1rem;
+  margin: 0 .35rem 0;
+}
+
+#madeWith{
+  display:flex;
+  align-items: center;
 }
