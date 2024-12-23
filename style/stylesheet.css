@@ -5,7 +5,8 @@
 html {
   background-color: #000000;
   color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Inter", Arial, system-ui, sans-serif;
+  line-height: 1.2;
 }
 
 body {
@@ -14,120 +15,120 @@ body {
 }
 
 h1 {
-  margin:0;
+  margin: 0;
 }
 
 #content {
-  margin-left:5vw;
-  margin-right:5vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 header {
   display: flex;
   align-items: center;
-  margin-right:8px;
+  margin-right: 8px;
   justify-content: center;
 }
 
 #splash {
   background-image: url("/images/teamPhoto.jpeg");
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
   background-attachment: local;
-  height:100%;
-  width:100%;
-  display:flex;
+  height: 100%;
+  width: 100%;
+  display: flex;
 
   justify-content: center;
 }
 
-#titleImage{
-  height:9rem;
+#titleImage {
+  height: 9rem;
 }
 
 @media (orientation: portrait) {
-  #titleImage{
-    width:85vw;
-    height:initial;
+  #titleImage {
+    width: 85vw;
+    height: initial;
   }
   #splash {
-    background-image: url("/images/goldKey.jpg");
-    align-items:end;
+    background-image: url("/images/robot.jpeg");
+    align-items: end;
   }
   #splashContent {
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
   }
 }
 
-#splashContent{
-  background-color:#000000ac;
+#splashContent {
+  background-color: #000000ac;
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  height:fit-content;
-  margin-top:2rem;
+  height: fit-content;
+  margin-top: 2rem;
 }
 
-#splashContainer{
-  height:100svh;
-  width:100vw;
-  display:flex;
+#splashContainer {
+  height: 100svh;
+  width: 100vw;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
 
-h2{
-  font-size:3rem;
-  color:var(--locked-in-yellow);
-  margin-top:2rem;
-  margin-bottom:2rem;
+h2 {
+  font-size: 3rem;
+  color: var(--locked-in-yellow);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-li{
-  margin-top:.5rem;
+li {
+  margin-top: 0.5rem;
 }
 
-#contactList{
+#contactList {
   list-style: none;
 }
 
-a{
-  color:var(--locked-in-yellow);
+a {
+  color: var(--locked-in-yellow);
 }
 
-#contactList a{
+#contactList a {
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
-#contactList a span{
+#contactList a span {
   margin-left: 8px;
 }
 
-footer{
-  display:flex;
+footer {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:var(--locked-in-yellow);
-  color:#000000;
-  margin-top:2rem;
+  background-color: var(--locked-in-yellow);
+  color: #000000;
+  margin-top: 2rem;
 }
-footer a{
-  color:#000000;
-}
-
-.icon{
-  height:2rem;
+footer a {
+  color: #000000;
 }
 
-#heart{
-  height:1rem;
-  margin: 0 .35rem 0;
+.icon {
+  height: 2rem;
 }
 
-#madeWith{
-  display:flex;
+#heart {
+  height: 1rem;
+  margin: 0 0.35rem 0;
+}
+
+#madeWith {
+  display: flex;
   align-items: center;
 }
