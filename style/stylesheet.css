@@ -52,7 +52,7 @@ header {
     height: initial;
   }
   #splash {
-    background-image: url("/images/robot.jpeg");
+    background-image: url("/images/robotMobile.png");
     align-items: end;
   }
   #splashContent {
